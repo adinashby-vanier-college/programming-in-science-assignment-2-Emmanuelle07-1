@@ -3,15 +3,13 @@
 def max_two_in_list(numbers):
     max_1 = max (numbers)
     list_2 = [val for val in numbers if val != max_1]
-    if list_2 == 0:
-        max_2 = "None"
-    else: max_2 = max (list_2)
+    max_2 = max (list_2)
     return (max_1, max_2)
 
 # Function 2: Lists - Removing Duplicates and Sorting
 # This function takes a list of numbers and returns a sorted list with duplicates removed.
 def remove_duplicates_and_sort(numbers):
-    return []
+    return sorted (set(numbers))
 # Function 3: Single-Dimensional Arrays - Cumulative Sum
 # This function takes an array (list) of numbers and returns a new list where each element is the cumulative sum of the previous elements.
 def cumulative_sum(arr):
