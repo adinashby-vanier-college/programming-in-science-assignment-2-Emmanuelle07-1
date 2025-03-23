@@ -25,7 +25,7 @@ def transpose_matrix(matrix):
 # Function 5: Slicing - Extracting Every Nth Element
 # This function takes a list and a step value N and returns every Nth element.
 def slice_every_nth(lst, step):
-    return []
+    return lst[::step]
 
 # Function 6: Arithmetic Operations with Arrays - Dot Product
 # This function takes two lists of the same length and returns their dot product.
