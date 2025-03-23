@@ -29,7 +29,9 @@ def slice_every_nth(lst, step):
 # Function 6: Arithmetic Operations with Arrays - Dot Product
 # This function takes two lists of the same length and returns their dot product.
 def dot_product(list1, list2):
-    return 0
+    dot_product_lists = [a * b for a, b in zip(list1,list2)]
+    total = sum (dot_product_lists)
+    return total
 
 # Function 7: Arithmetic Operations with Arrays - Matrix Multiplication
 # This function takes two 2D lists (matrices) and returns their matrix product.
