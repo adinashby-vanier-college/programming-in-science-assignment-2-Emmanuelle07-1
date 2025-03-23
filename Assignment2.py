@@ -11,7 +11,12 @@ def remove_duplicates_and_sort(numbers):
 # Function 3: Single-Dimensional Arrays - Cumulative Sum
 # This function takes an array (list) of numbers and returns a new list where each element is the cumulative sum of the previous elements.
 def cumulative_sum(arr):
-    return []
+    result = []
+    total = 0
+    for num in arr:
+        total += num
+        result.append(total)
+    return result
 
 # Function 4: Two-Dimensional Arrays - Matrix Transpose
 # This function takes a 2D list (matrix) and returns its transpose.
