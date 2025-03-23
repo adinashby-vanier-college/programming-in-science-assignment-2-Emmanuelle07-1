@@ -1,11 +1,9 @@
 # Function 1: Lists - Finding the Maximum and Second Maximum in a List
 # This function takes a list of numbers as input and returns the maximum and second maximum values.
 def max_two_in_list(numbers):
-    max_1 = max (numbers)
-    list_2 = [val for val in numbers if val != max_1]
-    max_2 = max (list_2)
-    return (max_1, max_2)
-
+    unique_numbers = list (set(numbers))
+    unique_numbers.sort (reverse=True)
+    return (unique_numbers[0], unique_numbers[1] if len(unique_numbers) > 1 else None)
 # Function 2: Lists - Removing Duplicates and Sorting
 # This function takes a list of numbers and returns a sorted list with duplicates removed.
 def remove_duplicates_and_sort(numbers):
