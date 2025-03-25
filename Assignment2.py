@@ -37,4 +37,4 @@ def dot_product(list1, list2):
 # Function 7: Arithmetic Operations with Arrays - Matrix Multiplication
 # This function takes two 2D lists (matrices) and returns their matrix product.
 def matrix_multiplication(matrix1, matrix2):
-    return [[0, 0], [0, 0]]
+    return [[sum (a * b for a, b in zip (row, col)) for col in zip (*matrix2)] for row in matrix1]
