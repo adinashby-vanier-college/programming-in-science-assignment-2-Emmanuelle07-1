@@ -21,7 +21,7 @@ def cumulative_sum(arr):
 # Function 4: Two-Dimensional Arrays - Matrix Transpose
 # This function takes a 2D list (matrix) and returns its transpose.
 def transpose_matrix(matrix):
-    return [[]]
+    return [list(row) for row in zip (*matrix)]
 # Function 5: Slicing - Extracting Every Nth Element
 # This function takes a list and a step value N and returns every Nth element.
 def slice_every_nth(lst, step):
